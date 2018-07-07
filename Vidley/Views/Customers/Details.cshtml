@@ -1,0 +1,17 @@
+﻿@model Vidley.Models.Customer
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2><hr />
+<text class="text-success">@Model.Name</text><br />
+<text>@Model.MembershipTypeId</text><br />
+@if(Model.Birthdate!=null)
+{ 
+<text>@Model.Birthdate</text>
+}
+else
+{
+<text >@Model.Name has Not specified his birthdate</text>
+}
